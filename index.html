@@ -33,7 +33,7 @@
               <p class="card-text">{{ event.eventDescription }}</p>
               <p class="card-text">Add your name to the guest list for exclusive offers:</p>
 
-              <form class="form-inline">
+              <form class="form-inline" v-on:submit.prevent="formSubmitted">
                 <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
                 <input type="submit" class="btn btn-primary"></input>
               </form>
@@ -57,6 +57,7 @@
               </div>
               <div>
                 <h4>No names added yet...</h4>
+                {{ guestName }}
               </div>
             </div>
           </div>
