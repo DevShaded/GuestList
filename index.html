@@ -34,9 +34,10 @@
               <p class="card-text">Add your name to the guest list for exclusive offers:</p>
 
               <form class="form-inline">
-                <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe">
+                <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
                 <input type="submit" class="btn btn-primary"></input>
               </form>
+              {{ newNameText }}
             </div>
           </div>
         </div>
