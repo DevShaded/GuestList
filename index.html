@@ -51,13 +51,12 @@
             </div>
             <div class="card-block">
               <div>
-                <div class="card-success rounded name-box">
-
+                <div class="card-success rounded name-box" v-for="name in guestName">
+                  {{ name }}
                 </div>
               </div>
               <div>
                 <h4>No names added yet...</h4>
-                {{ guestName }}
               </div>
             </div>
           </div>
